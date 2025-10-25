@@ -22,9 +22,9 @@ namespace MVVM_PELP.MVVM.Views
                 App.Current.MainPage.DisplayAlert("Comando", "Has presionado el botón", "OK");
             });
 
-            SearchCommand = new Command(() =>
+            SearchCommand = new Command((s) =>
             {
-                var data = SearchData;
+                var data = s;
             });
         }
 
