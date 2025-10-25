@@ -11,11 +11,20 @@ namespace MVVM_PELP.MVVM.Views
     {
         public ICommand ClickCommand { get; }
 
+        public ICommand SearchCommand { get; }
+
+        public string SearchData { get; set; }
+
         public ComandosViewModel()
         {
             ClickCommand = new Command(() =>
             {
                 App.Current.MainPage.DisplayAlert("Comando", "Has presionado el botón", "OK");
+            });
+
+            SearchCommand = new Command(() =>
+            {
+                var data = SearchData;
             });
         }
 

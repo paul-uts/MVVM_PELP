@@ -5,7 +5,9 @@
              Title="ComandosView">
     <VerticalStackLayout>
         <Button Text="Click me"
-                Clicked="Button_Clicked"
                 Command="{Binding ClickCommand}"/>
+
+        <SearchBar Text="{Binding SearchData}"
+                   SearchCommand="{Binding SearchCommand}"/>
     </VerticalStackLayout>
 </ContentPage>
